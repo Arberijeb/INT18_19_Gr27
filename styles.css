@@ -7,19 +7,18 @@ body {
 
   margin: 0;
   padding: 0;
-  background-color:#FFFAFA;
  
 }
 .day {
 	margin:0;
 	padding:0;
-               background-image:url("Home/day.jpg");
+               background-image:url("day.jpg");
 
 }
 .night {
 	margin:0;
 	padding:0;
-               background-image:url("Home/night.jpg");
+               background-image:url("night.jpg");
                background-repeat: no-repeat;
 }
 
