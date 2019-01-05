@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+<head><title>Departments</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="departmentsstyle.css" type="text/css">
+<script src="jquery-1.11.2.min.js" ></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+<script>	
+	$(document).ready(function() {
+		$(".takeof").dblclick(function(){
+			$(".fSocial").hide("slow",function(){
+			});
+		});
+		   
+    });
+</script>
+<script>
+	$(document).ready(function() {
+		$(".main").mouseover(function(){
+			$(".main").animate({
+			
+            opacity: '1',
+			zoom:1.005
+			
+       
+		});
+		});
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#butoni").click(function(){
+        $("h3").append("  and enjoy our webpage");
+    });
+    });
+    </script>
+</head>
+<body>
+<div id="container">
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+												<td><h1>Universal College Of Engineering</h1></td>
+                                                    <td align="right">
+                                                        <div class="uni">
+                                                            Prishtina | Kosovo</div>
+                                                    </td>
+                                                </tr>
+												<tr>
+												<td>Affiliated to University of Prishtina</td>
+												<td align="right">
+												<div class="uni">Tel: 381(0)38 694 254 | MAIL: info@universalcollege</div>
+												</td>
+												</tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+ </table>
+<div class="menu">
+	<nav>
+		<a href="index.html">Home</a>
+	    <a href="about.html">About us</a>
+	    <a href="departments.html">Departments</a>
+        <a href="news.html">News & Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="apply.html">Apply</a>
+		<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search this website.." name="search">
+      <button type="submit"><i class="fa fa-search"></i>SEARCH</button>
+    </form>
+  </div>
+    </nav>
+</div> 
+
+<h1 style="color:#660000;font-size:30px;text-align:center;">Departments at <abbr title="Universal College of Engineering">UCOE</abbr></h1>
+<div class="clearfix">
+  <div class="img-container">
+  <img src="Departments/ss.jpg" alt="Italy" style="width:450px;height:320px;">
+  </div>
+  <div class="img-container">
+  <img src="Departments/fiekk.jpg" alt="Forest" style="width:450px;height:320px;">
+  </div>
+</div>
+
+
+<div id="flip">
+  <p style="font-size:25px;margin:0 20px 0 20px;"><b>Other pictures</b></p></div>
+<div id="panel">
+<div class="clearfix">
+<div class="img-container">
+   <div id="lab">
+        <img src="Departments/fiee.jpg" width="450px" height="320px"  />
+        </div>
+		</div>
+<div class="img-container">
+        <div id="labb">
+        <img src="Departments/fiik.jpg" width="450px" height="320px" />
+        </div>
+		</div>
+		
+       
+  
+    </div>
+</div>
+
+
+<div style="margin-left:20px;text-align:left;">
+  <ol class="b">
+  <li><a href="depart1.html"  target="_blank">Computerized Automation and Robotics</a></li>
+  <li><a href="depart2.html"  target="_self">Power Engineering</a></li>
+  <li><a href="depart3.html">Electronics</a></li>
+  <li><a href="depart4.html">Computer Engineering</a></li>
+ </ol>
+</div>
+<hr>
+
+<footer>
+
+<b>Copyright © 2019 Universal College of Engineering. All rights reserved.</b>
+<p class="takeof" style="float:right; padding-right:25px;">X</p>
+<button onclick="ndrrimiEmri()">Change it</button>
+        <button id="butoni">Add</button>
+        <style>
+		button {
+			width:80px;
+		    height:40px;
+			background-color:#8A9999;
+			border:none;
+			color:white;
+			text-align:center;
+			text-decoration:none;
+			display:inline-block;
+			font-size:12px;
+		}</style>
+        <h3 id="emri">Please take a look at our Departments</h3>
+        <script>
+		function ndrrimiEmri(){
+			var stringu = document.getElementById("emri").innerHTML;
+			var teksti = stringu.replace("Departments","College");
+			document.getElementById("emri").innerHTML=teksti;
+		}
+		</script>
+        
+</footer>
+
+</div>
+
+</body>
+</html>
