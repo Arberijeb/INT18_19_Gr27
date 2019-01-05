@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+<head><title>Apply</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="applystyle.css" type="text/css">
+<meta name="author" content="Arberije Burrniku">
+<meta name="register" content="Web page of Universal College of Engineering">
+<script src="jquery-1.11.2.min.js" ></script>
+
+<script>
+$(document).ready(function(){
+  $("#verejtja").click(function(){
+    $("#p1").hide("slow",function(){
+      alert("Warning was ignored!");
+    });
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#p1").mouseup(function(){
+    alert("You are obliged to fill fields with star");
+  });
+});
+</script>
+<script>
+$(document).ready(function() {
+	$("#butoni").click(function(){
+		alert($("#fcb").attr("href"));
+	});
+    
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#butoni2").click(function(){
+        $("#tw").attr("href", "http://www.uni-pr.edu");
+    });
+});
+</script>
+</head>
+<body>
+<div id="container">
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+												<td><h1>Universal College Of Engineering</h1></td>
+                                                    <td align="right">
+                                                        <div class="uni">
+                                                            Prishtina | Kosovo</div>
+                                                    </td>
+                                                </tr>
+												<tr>
+												<td>Affiliated to University of Prishtina</td>
+												<td align="right">
+												<div class="uni">Tel: 381(0)38 694 254 | MAIL: info@universalcollege</div>
+												</td>
+												</tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+ </table>
+<div class="menu">
+	<nav>
+		<a href="index.html">Home</a>
+	    <a href="about.html">About us</a>
+	    <a href="departments.html">Departments</a>
+        <a href="news.html">News & Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="apply.html">Apply</a>
+		<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search this website.." name="search">
+      <button type="submit"><i class="fa fa-search"></i>SEARCH</button>
+    </form>
+  </div>
+    </nav>
+</div> 
+
+<div class="main">
+<form action="MAILTO:arberie_b@hotmail.com" method="get" enctype="text/plain" class="register">
+	</br>
+    </br> 
+    <h1 style="text-align:center;">Be part of US
+    <svg height="81" width="75">
+  <g fill="none">
+    <path stroke="red" d="M0 40 l215 0" />
+    <path stroke="black" d="M0 60 l215 0" />
+    <path stroke="blue" d="M0 80 l215 0" />
+  </g>
+  Sorry, your browser does not support inline SVG.
+</svg>
+ </h1></br>
+    <fieldset class="row1">
+    <legend>Account Details</legend>
+    <p>
+    <label>E-mail * 
+    </label>
+    <input type="email" name="e-mail" autocomplete="on"/>
+    <label>Repeat e-mail
+    </label>
+    <input type="email" name="e-mail" autocomplete="on" />
+    </p>
+    <p>
+    	<label>Password *
+        </label>
+        <input type="password" name="psw" />
+        <label>Repeat password
+        </label>
+        <input type="password" name="psw" />
+        <label class="obinfo"><b>*Obliged</b>
+        </label>
+        </p>
+        </fieldset>
+        
+        <fieldset class="row2">
+        		<legend>Personal Information</legend>
+                <p>
+                <label>Emri *
+                </label>
+                <input type="text" class="long" />
+                </p>
+                <p>
+                <label>Telephone *
+                </label>
+                <input type="text" maxlength="10" />
+                </p>
+                <p>
+                <label class="optional">Street
+                </label>
+                <input type="text" class="long" value="Qamil Ilazi" disabled/>
+                </p>
+                <p>
+                <label>Country</label>
+                <input name="Country" list="Country" />
+                <datalist id="Country">
+                	<option value="Kosovo">
+                    <option value="Albania">
+                    <option value="America">
+                    <option value="Etc">
+                </datalist>
+                </p>
+                <p>
+                <label class="optional">You're webpage
+                </label>
+                <input class="long" type="text" value="http://" />
+                </p>
+                <p id="demo" ></p>
+                <script>
+				if(new Date().getHours()<12){
+					document.getElementById("demo").innerHTML="Good day";
+			
+				}
+				else {
+					document.getElementById("demo").innerHTML="Good evening";
+				}
+				</script>
+                <p id="dita"></p>
+                <script>
+				var day;
+					switch (new Date().getDay()) {
+						case 0:
+							day = "Sunday";
+							break;
+						case 1:
+							day = "Monday";
+							break;
+						case 2:
+							day = "Tuesday";
+							break;
+						case 3:
+							day = "Wednesday";
+							break;
+						case 4:
+							day = "Thursday";
+							break;
+						case 5:
+							day = "Friday";
+							break;
+						case  6:
+							day = "Saturday";
+							break;
+					}
+					document.getElementById("dita").innerHTML = "Today is " + day;
+				
+				</script>
+                
+                </fieldset>
+                
+                
+                <fieldset class="row3">
+                <legend>Additional information</legend>
+                <p>
+                <label>Gender *</label>
+                <input type="radio" name="gender" value="male" />
+                    <label class="gender">M</label>
+                <input type="radio" name="gender" value="female" />
+                <label class="gender">F</label>
+                </p>
+                <p>
+                <label>Birthday *
+                </label>
+                <select class="date">
+                <option value="1">01
+                </option>
+                <option value="2">02
+                        </option>
+                        <option value="3">03
+                        </option>
+                        <option value="4">04
+                        </option>
+                        <option value="5">05
+                        </option>
+                        <option value="6">06
+                        </option>
+                        <option value="7">07
+                        </option>
+                        <option value="8">08
+                        </option>
+                        <option value="9">09
+                        </option>
+                        <option value="10">10
+                        </option>
+                        <option value="11">11
+                        </option>
+                        <option value="12">12
+                        </option>
+                        <option value="13">13
+                        </option>
+                        <option value="14">14
+                        </option>
+                        <option value="15">15
+                        </option>
+                        <option value="16">16
+                        </option>
+                        <option value="17">17
+                        </option>
+                        <option value="18">18
+                        </option>
+                        <option value="19">19
+                        </option>
+                        <option value="20">20
+                        </option>
+                        <option value="21">21
+                        </option>
+                        <option value="22">22
+                        </option>
+                        <option value="23">23
+                        </option>
+                        <option value="24">24
+                        </option>
+                        <option value="25">25
+                        </option>
+                        <option value="26">26
+                        </option>
+                        <option value="27">27
+                        </option>
+                        <option value="28">28
+                        </option>
+                        <option value="29">29
+                        </option>
+                        <option value="30">30
+                        </option>
+                        <option value="31">31
+                        </option>
+                    </select>
+                     <select>
+                        <option value="1">Janary
+                        </option>
+                        <option value="2">February
+                        </option>
+                        <option value="3">March
+                        </option>
+                        <option value="4">April
+                        </option>
+                        <option value="5">May
+                        </option>
+                        <option value="6">June
+                        </option>
+                        <option value="7">July
+                        </option>
+                        <option value="8">August
+                        </option>
+                        <option value="9">September
+                        </option>
+                        <option value="10">October
+                        </option>
+                        <option value="11">November
+                        </option>
+                        <option value="12">December
+                        </option>
+                    </select>
+                    <input class="year" type="text" size="4" max="4" />ex. 1994
+                    </p>
+                    <p>
+                    <label>Nationality
+                    </label>
+                  
+                    <input name="Nacionaliteti" list="Nacionaliteti"/>
+                    
+             
+                    <datalist id="Nacionaliteti">
+                    <option value="Kosovan">
+                     <option value="Albanian">
+                    </option>
+                    <option value="American">
+                    </option>
+                    <option value="Etc...">
+                    </option>
+                    </datalist>
+                 
+                   
+                  
+                    </p>
+                    <p>
+                    	<label>Child? *
+                        </label>
+                        <input type="checkbox" value="" />
+                        </p><br />
+                        <div><legend><b>Be careful !!!</b>
+                        <p id="p1">* Warning(Click to read) !</p>
+       					 <p id="verejtja">Click to ignore Warning!</p>
+                        </legend>
+                        	<ol type="1">
+                            <li> All data you provide here will be saved with a special care for the needs of the website only.</li>
+                            <li> If you think that these requirements violate your right to privacy please make the right decision, otherwise clicking on the button "accept" you officially have accepted that we have access to this data.</li>
+                            <li>Time and date of the meeting will be taken as part of the agreement between our webpage and client.</li>
+                        <li> <p id="koha">The exact time</p>
+                        <script>document.getElementById("koha").innerHTML = Date();
+						<!-- funksioni date nga javascript-->
+						</script>
+                        </li>
+                        <li><p id="moti"></p>
+                        <script>
+						document.getElementById("moti").innerHTML = "The temperature today is " + toCelsius(77) + "Celsius";
+						function toCelsius(fahrenheit)
+						{
+							return(5/9)*(fahrenheit-32);
+						}
+						</script>
+                        </li>
+                        <li>
+                        <p id="stringu"></p>
+                        <script>
+						var nr=25;
+							document.getElementById("stringu").innerHTML= "25 "  + "in Binary: " + neString(nr);
+						function neString()
+						{
+							return nr.toString(2) + "   |||    in Exponential   " + nr.toExponential();
+							};
+						</script>
+                        </li>
+                        
+                        <li>
+                        <p id="nani"></p>
+                        <script>
+						
+						document.getElementById("nani").innerHTML=450/"iruG" + " "+ konstantet();
+						function konstantet()
+						
+						{
+							return Math.PI + " ---approximate value--- "+Math.floor(3.14) ;
+							};
+						document.getElementById("max").innerHTML= Number.MAX_VALUE;
+						</script>
+                        </li>
+                        </ol>
+                        </div>
+                        </fieldset>
+                        <fieldset class="row4">
+                        <legend>admission
+                        </legend>
+                        <p class="agreement">
+                        	<input type="checkbox" value="" />
+                            <label> * you agree to our Terms and that you have read our Data Policy, including our Cookie Use.
+                            </label>
+                            </p>
+                            </fieldset>
+                            
+                        <div><button type="submit" class="button">Apply &raquo;</button>
+                        </div>
+                    </form>
+                   </div>
+
+
+<!--Footeri i faqes-->
+<footer>
+<b><h5 id="test">Copyright © 2019 Universal College of Engineering. All rights reserved.</h5><b/>
+<p>
+<button onclick="testimi()" >Find it</button>
+<button id="butoni">Href value</button>
+<button id="butoni2">Change href</button>
+
+
+<p id="test"></p>
+
+<script>
+function testimi() {
+    var str = "College";
+    var patt = new RegExp("e");
+    var res = patt.test(str);
+    document.getElementById("test").innerHTML = res;
+}
+</script>
+ <style>
+		button {
+			 width:85px;
+		  height:31px;
+			background-color:#699;
+			border:none;
+			color:white;
+			text-align:center;
+			text-decoration:none;
+			display:inline-block;
+			font-size:12px;
+			
+		}
+		</style>
+		
+<div class="fSocial">
+        <span>Connect with US</span>
+        <li><a href="https://www.facebook.com" id="fcb">
+        <img src="Social Media/facebook29.png"  />
+        </a>
+        </li>
+        <li><a href="https://twitter.com" id="tw">
+        <img src="Social Media/twitter21.png" />
+        </a>
+        </li>
+        <li><a href="https://www.linkedin.com">
+        <img src="Social Media/linkedin12.png" />
+        </a>
+        </li>
+        </div>
+</footer>
+
+</div><!--Mbyllet Container-->
+</body>
+</html>
