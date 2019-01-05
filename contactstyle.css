@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container 
+{
+   width:1000px;
+   height:1240px;
+   background-color:white;
+   margin: 0 160px 0;
+  
+}
+
+.menu {
+               
+	width:960px;
+	height:30px;
+	background-color:#f2f2f2;
+	box-shadow: -1px 0px 9px 0px rgba(0,0,0,075);
+	z-index:9999;
+	text-align:center;
+               font-size:15px;
+               position:relative;
+               margin: 20px 20px 20px;
+}
+.menu a {
+               float:left;
+	text-decoration: none;
+               margin: 5px 0;
+	padding: 2px 25px; 
+	color: #4d5255;
+	position: relative;
+	display: inline;
+	text-align:center;
+               
+}
+.menu :hover{
+     color: #009ddb;
+}
+.menu a.active {
+background-color:#f3f3f3;
+color:white;
+}
+
+
+.menu .search-container {
+  float: right;
+  margin-right:20px;
+
+}
+
+.menu input[type=text] {
+  padding: 4px;
+  margin-top:3px;
+  font-size: 13px;
+  border: none;
+}
+
+.menu .search-container button {
+  float: right;
+  padding: 4px;
+  margin-top:3px;
+  margin-right:0px;
+  margin-left:8px;
+  
+  background: #fff;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 960px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .menu a, .menu input[type=text], .menu .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 0;
+    
+  }
+  .menu input[type=text] {
+   border: 1px solid #ccc;
+  }
+}
+.uni {
+	font-size: 14px;
+	color: #262626;	
+}
+/*Forma per kontakt*/
+	
+form.contact {
+       width:960px;
+       text-align:center;
+}
+form h1{
+      color:#8B0000;
+}
+form.contact label {
+    width:140px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:15px;
+    font-size:20px;
+}
+form.contact input {
+    width: 180px;
+    color: #505050;
+    float: left;
+    margin-right: 5px;
+    margin-top:15px;
+}
+form.contact input[type=text] {
+    border-radius:5px 0px 5px 0px;
+    border: 1px solid #E1E1E1;
+    height: 25px;
+}
+form.contact input[type=email] {
+   border-radius:5px 0px 5px 0px;
+   border: 1px solid #E1E1E1;
+   height: 25px;
+}
+form.contact input[type=tel] {
+   border-radius:5px 0px 5px 0px;
+   border: 1px solid #E1E1E1;
+   height: 25px;
+}
+form.contact input[type=file] {
+   border-radius:5px 0px 5px 0px;
+   border: 1px solid #E1E1E1;
+   height: 20px;
+   background-color:#666;
+	background-color:#8A9999;
+	border:none;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:12px;
+}
+keygen {
+	
+  border-radius:5px 0px 5px 0px;
+  border: 1px solid #E1E1E1;
+  height: 25px;
+  background-color:#666;
+	background-color:#8A9999;
+               border:none;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:12px;
+}
+	 
+form.contact input[list=Country]
+{
+  border-radius:5px 0px 5px 0px;
+  border: 1px solid #E1E1E1;
+  height: 25px;
+}
+form.contact textarea {
+  border-radius: 15px 30px;
+  resize:none;
+  width:510px;
+  height:140px;
+  margin-top:20px;
+  margin-right:180px;
+  border: 1px solid #E1E1E1;
+}
+form.contact button {
+  width:100px;
+  height:50px;
+  float:right;
+  margin-right:257px;
+  margin-top:4px;
+    transform:rotateX(30deg);
+    background-color:#8A9999;
+    border:none;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:18px;			
+}
+form.contact iframe {
+  width:950px;
+  height:180px;
+  padding-top:47px;
+}	
+footer { 
+               margin: 0 20px;
+               width:960px;
+	height:180px;
+	font-size:17px;
+	position:relative;
+               
+   
+}
