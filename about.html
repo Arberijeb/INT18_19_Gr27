@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+<head><title>About Us</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="About/aboutstyle.css" type="text/css">
+</head>
+<body>
+<div id="container">
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+												<td><h1>Universal College Of Engineering</h1></td>
+                                                    <td align="right">
+                                                        <div class="uni">
+                                                            Prishtina | Kosovo</div>
+                                                    </td>
+                                                </tr>
+												<tr>
+												<td>Affiliated to University of Prishtina</td>
+												<td align="right">
+												<div class="uni">Tel: 381(0)38 694 254 | MAIL: info@universalcollege</div>
+												</td>
+												</tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+ </table>
+ <header>
+<div class="menu">
+	<nav>
+		<a href="index.html">Home</a>
+	    <a href="about.html">About us</a>
+	    <a href="departments.html">Departments</a>
+        <a href="news.html">News & Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="apply.html">Apply</a>
+		<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search this website.." name="search">
+      <button type="submit"><i class="fa fa-search"></i>SEARCH</button>
+    </form>
+  </div>
+    </nav>
+</div> 
+</header>
+
+<h1 style="font-size:30px;text-align:center;">About us</h1>
+
+<figure>
+<img src="About/college.jpg" alt="Universal College" style="width:930px;height:450px;">
+<figcaption>Universal College of Engineering - Prishtina, Kosovo</figcaption>
+</figure>
+
+<div style="font-size:17px;margin:0 20px;">
+<section>
+<p><b>Universal College</b> under the aegis of Universal Educational Trust (R) made a
+humble beginning in <mark>1970</mark> in its journey of higher education with a view to 
+provide quality education to build and shape the individuals who are relevant to the competitive world.
+<i>The institution </i>&#203sht&euml involved in various innovative programmes apart
+from teaching regular curriculum. These programmes are carefully
+designed to provide students a clear edge in placement or further education. 
+The college has excelled in all disciplines, curricular, extracurricular and 
+co-curricular activities. 
+The Quality initiatives undertaken by the <u>college</u>, has resulted in an
+increased demand for the seats.
+Developing Universal College as a campus of excellence is a big 
+challenge to the management and the authorities are well prepared
+and equipped in planning and promoting need based strategies.</p>
+<hr>
+</section>
+<h2>Vision</h2>
+<p>
+To help students acquire and develop knowledge, skills,
+values & leadership qualities relevant to the 21st century and beyond for their personal and professional growth.
+</p>
+<hr>
+
+<h2>Mission</h2>
+<p>
+To make Universal College a nurturing ground for the holistic development
+of young minds by providing intellectual nourishment and 
+wholesome education that sustains emotional stability and strength to 
+respond creatively to the challenges of a world full of relentless competition.
+</p>
+<hr>
+<h2>Objectives</h2>
+<p>
+The main objective is to expand student’s intellectual and spiritual horizons, underscore 
+the nobility of humanity’s never-ending search for truth, beauty and compassion, 
+by focusing student-centered teaching-learning activities.
+</p>
+<hr>
+<h2>Core Values</h2>
+<p>We have articulated six core values that guide our operational 
+ethos and commitment to deliver unparalled support for our students.</p>
+<ul>
+<li>Accountability</li>
+<li>Collaboration</li>
+<li>Empowerment</li>
+<li>Integrity</li>
+<li>Development</li>
+<li>Enrichment</li>
+<li>Exploration</li>
+</ul>
+<hr>
+
+<img src="About/drea.png" alt="DreamBig" width="960" height="450">
+<canvas id="Kanvasi" width="580" height="50";
+</canvas>
+<script>
+	var c= document.getElementById("Kanvasi");
+	var ctx=c.getContext("2d");
+	//krijimi i gradientit
+	var gradienti =ctx.createLinearGradient(0,0,400,0);
+	gradienti.addColorStop(1,"#0000CC");
+	gradienti.addColorStop(0,"#CCCCFF");
+	//mbushja e gradientit
+	ctx.fillStyle=gradienti;
+	ctx.fillRect(10,10,580,80);
+	ctx.font="25px Corbel";
+	ctx.strokeText("DREAM BIG, WORK HARD & SUCCEED WITH US",50,35);
+</script>
+
+</div>
+<div style="margin:0 20px;">
+<hr>
+<h2>Motivational audios for students</h2>
+<audio controls>
+  <source src="Audio/stevejobs.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<audio controls>
+  <source src="Audio/success.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<hr>
+</div>
+
+<footer>
+
+<b><p id="foti"></p></b>
+<script>
+var footeri = ["Copyright ©","2019 Universal College of Engineering","All rights reserved."];
+document.getElementById("foti").innerHTML=footeri.join(" ");
+</script>
+<address><!--Perdorimi i tagur adress-->
+Created By student of <cite>FIEK</cite><br><!--Perodrimi i tagut cite per citate-->
+</address>
+<p id="stu"></p>
+<script>
+var studentet =["Arberije","Burrniku"];
+var text="  ";
+var i;
+for(i=0;i<studentet.length; i++)
+{
+	text+=studentet[i]+"  ";
+	}
+	document.getElementById("stu").innerHTML=text;
+</script>
+<p>Please evaluate my project between 1 and 15</p>
+<input id="vlera" type="text">
+<button type="button" onclick="vlersimi()">Submit</button>
+
+<p id="message"></p>
+
+<script>
+function vlersimi() {
+    var message, x;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.getElementById("vlera").value;
+    try { 
+        if(x == "")  throw "is empty";
+        if(isNaN(x)) throw "is not a number";
+        x = Number(x);
+        if(x > 15)   throw "is too high";
+		if(1<x<15) 	throw "Thank You"
+        if(x < 1)    throw "is too low";
+    }
+    catch(err) {
+        message.innerHTML = err;
+    }
+    finally {
+        document.getElementById("demo").value = "";
+    }
+}
+</script>
+<style>
+		button {
+			 width:80px;
+		  height:20px;
+			background-color:#999;
+			border:none;
+			color:white;
+			text-align:center;
+			text-decoration:none;
+			display:inline-block;
+			font-size:12px;
+}
+</style>
+
+</footer>
+</div>
+</body>
+</html>
+
+    
