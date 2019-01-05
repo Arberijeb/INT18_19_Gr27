@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+<head><title>Department of Computer Engineering</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="departstyle4.css" type="text/css">
+<style>
+#div1 {
+  background-color:white;
+  width:910px;
+  border:25px solid #FFFFE0;
+  padding:0;
+  margin:0;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+												<td><h1>Universal College Of Engineering</h1></td>
+                                                    <td align="right">
+                                                        <div class="uni">
+                                                            Prishtina | Kosovo</div>
+                                                    </td>
+                                                </tr>
+												<tr>
+												<td>Affiliated to University of Prishtina</td>
+												<td align="right">
+												<div class="uni">Tel: 381(0)38 694 254 | MAIL: info@universalcollege</div>
+												</td>
+												</tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+ </table>
+<div class="menu">
+	<nav>
+		<a href="index.html">Home</a>
+	    <a href="about.html">About us</a>
+	    <a href="departments.html">Departments</a>
+        <a href="news.html">News & Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="apply.html">Apply</a>
+		<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search this website.." name="search">
+      <button type="submit"><i class="fa fa-search"></i>SEARCH</button>
+    </form>
+  </div>
+    </nav>
+</div> 
+<div style="margin:0 20px;">
+<h1 style="font-family:Tahoma, Geneva, sans-serif;font-size:34px;text-shadow:2px 2px 4px #00c0aa;">
+Department of Computer Engineering</h1>
+
+<canvas id="myCanvas" width="960" height="500" style="border:1px solid #d3d3d3;">
+<img id="comp" width="930" height="470" src="Departments/ce.jpg" alt="Computer Engineering">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+window.onload = function() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("comp");
+  ctx.drawImage(img, 10, 10);
+}
+</script>
+
+<div id="div1">
+<h2>About the department</h2>
+<p> The department offers excellence academic environment with a team of highly qualified faculty members 
+to inspire the students to develop their technical skills and impress the spirit of team work in them. 
+Department also has state of art laboratories equipped with the computers with latest software and hardware configuration.
+The students of the department get placed in multinational companies and go on to attain prestigious positions.</p>
+<h2>Faculty</h2>
+<p>The department has well qualified and experienced faculty members. 
+They are specialized in different research domains like Image Processing,
+Data Mining, Computer Networks and in modern research areas like Bio informatics,
+Big data analytics in health care domain. The Faculty members contribute to academic developmen
+by authoring various international Journals, books and presenting research papers in international and national conferences.</p>
+<h2>Laboratory</h2>
+<ol type="I">
+<li>C Programming Lab.</li>
+<li>Data Structures Lab.</li>
+<li>Object Oriented Programming Through C++ Lab.</li>
+<li>Object Oriented Programming Through Java Lab.</li>
+<ol type="a"><li>Android app development.</li>
+<li>.net technology.</li></ol>
+<li>Data Base Management Systems Lab.</li>
+<li>Operating Systems Lab.</li>
+<li>Compiler Design Lab.</li>
+<li>Advanced Data Structures Lab.</li>
+<li>UNIX Programming Lab.</li>
+<li>Advanced Java & Web Technologies Lab.</li>
+<li>UML& Design Patterns Lab.</li>
+<li>Mobile Application Development Lab.</li>
+<li>IT Workshop</li>
+<li>Computer Networks & Unix Lab</li>
+</ol>
+
+</ul>
+</ul>
+</div>
+<hr>
+</div>
+
+<footer>
+<b><p id="teksti" style="margin-top:10px;margin-left:10px;padding-top:35px;"></p></b>
+<script>
+var skema= {
+			teDrejtat:"Copyright ©",
+			viti:"2019",
+			teksti:"Universal College of Engineering. All rights reserved."	
+};
+	document.getElementById("teksti").innerHTML = skema.teDrejtat+ " " + skema.viti + " " + skema.teksti;
+</script>
+</footer>
+
+</div>
+</body>
+</html>
+
