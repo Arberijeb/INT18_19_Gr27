@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+<head><title>Department of Power Engineering</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="departstyle2.css" type="text/css">
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have visited us " + sessionStorage.clickcount + " time(s) in this session.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+<body>
+<div id="container">
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+												<td><h1>Universal College Of Engineering</h1></td>
+                                                    <td align="right">
+                                                        <div class="uni">
+                                                            Prishtina | Kosovo</div>
+                                                    </td>
+                                                </tr>
+												<tr>
+												<td>Affiliated to University of Prishtina</td>
+												<td align="right">
+												<div class="uni">Tel: 381(0)38 694 254 | MAIL: info@universalcollege</div>
+												</td>
+												</tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+ </table>
+<div class="menu">
+	<nav>
+		<a href="index.html">Home</a>
+	    <a href="about.html">About us</a>
+	    <a href="departments.html">Departments</a>
+        <a href="news.html">News & Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="apply.html">Apply</a>
+		<div class="search-container">
+      <form action="/action_page.php">
+      <input type="text" placeholder="Search this website.." name="search">
+      <button type="submit"><i class="fa fa-search"></i>SEARCH</button>
+    </form>
+  </div>
+    </nav>
+</div> 
+<div style="margin:0 20px;">
+<h1 style="font-family:Tahoma, Geneva, sans-serif;font-size:34px;text-shadow: 2px 2px 4px #00c0aa;">
+<b>Department of Power Engineering</b></h1>
+<p class="p"><img src="Departments/csc.jpg" alt="Power" style="width:380px;height:250px;margin-left:15px;">
+The Department Power Engineering was established from the
+ inception of the institute in the year 2008.
+ The department offers one under graduate B.Tech. (P.E) programme and one Post Graduate (M.Tech) programme
+ in "Power Electronics" specialization.
+ The department has been continuously striving for excellence
+ in engineering education by well designed, constantly reviewed program to incorporate all advancements 
+ in existing and emerging technologies which gives the students a holistic and sensible view of the present
+ scenario of the Electrical industry.</p>
+ <p>The under graduate program imparts students with professional in the field of
+power engineering besides expert in mathematics, physics, computers,
+measurements and instrumentation are the essential need for any flourishing electrical engineer. 
+Students gain practical experience from field visits to electrical machine manufacturing industries, 
+power generating stations, substations and power grid corporations.
+
+<p style="font-size:25px;"><b>Faculty</b></p>
+<p>The under graduate program imparts students with professional in the field 
+of power engineering besides expert in mathematics, physics, computers, measurements 
+and instrumentation are the essential need for any flourishing electrical engineer. 
+Students gain practical experience from field visits to electrical machine manufacturing industries, 
+power generating stations, substations and power grid corporations.</p>
+
+<table id="semester1">
+ <thead><tr style="background-color:#B0C4DE"><th>Course Number</th>
+<th>Course Title</th>
+<th>CL</th>
+<th>LAB</th>
+<th>CR</th>
+</tr></thead><tbody>
+<tr>
+<td>ELET 101C</td>
+				
+<td>Electric Circuits</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>ELET 102C</td>
+<td>Circuit Analysis</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>ELET 110C</a></td>
+<td>Electronics I</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>ELET 210C</td>
+<td>Electronics II</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>ELET 215C</td>
+<td>Advanced Digital Electronics</td>
+<td>3</td>
+<td>3</td>
+<td><u>4</u></td>
+</tr>
+<tr>
+<td colspan="4">
+<strong>TOTAL CREDITS</strong></td>
+<td><strong>20</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="margin:40px 20px;float:left;"><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<button style="margin:40px 0 0 700px;"><a href="game.html">Play a game</a></button>
+<br>
+<br><br>
+<footer>
+<b><p id="teksti" style="margin:10px 0 0 10px;padding-top:35px;"></p></b>
+<script>
+var skema= {
+			teDrejtat:"Copyright ©",
+			viti:"2019",
+			teksti:"Universal College of Engineering. All rights reserved."	
+};
+	document.getElementById("teksti").innerHTML = skema.teDrejtat+ " " + skema.viti + " " + skema.teksti;
+</script>
+</footer>
+</div>
+</body>
+</html>
