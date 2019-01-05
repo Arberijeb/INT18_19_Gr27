@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+<head><title>News & Events</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="erasmusstyle.css" type="text/css">
+</head>
+<body>
+<div id="container">
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+												<td><h1>Universal College Of Engineering</h1></td>
+                                                    <td align="right">
+                                                        <div class="uni">
+                                                            Prishtina | Kosovo</div>
+                                                    </td>
+                                                </tr>
+												<tr>
+												<td>Affiliated to University of Prishtina</td>
+												<td align="right">
+												<div class="uni">Tel: 381(0)38 694 254 | MAIL: info@universalcollege</div>
+												</td>
+												</tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+ </table>
+ <header>
+<div class="menu">
+	<nav>
+		<a href="index.html">Home</a>
+	    <a href="about.html">About us</a>
+	    <a href="departments.html">Departments</a>
+        <a href="news.html">News & Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="apply.html">Apply</a>
+		<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search this website.." name="search">
+      <button type="submit"><i class="fa fa-search"></i>SEARCH</button>
+    </form>
+  </div>
+    </nav>
+</div>
+</header> 
+<div style="margin:0 20px;">
+<h2>Application for the Erasmus+ program for 2019</h2>
+<p>The Erasmus+ Office in Kosovo informs you that the general call for applications in the Erasmus+ 
+program for 2019 was published on 24 October 2018.</p>
+<p>The Guide to applying for the Erasmus + 2019 program can be found on the official website of the program.</p>
+<p>These documents can be found at the general call for applications in the Erasmus+ program for 2019</p>
+<p>Please send the call for applications to your institution staff!</p>
+<p>For more detailed information about the program, do not hesitate to contact us.</p>
+
+<p>Erasmus+ Office staff in Kosovo.</p>
+<video width="960" controls>
+  <source src="Erasmus/erasmus.mp4" type="video/mp4">
+</video>
+<hr>
+</div>
+
+<div style="margin:20px;">
+<button onclick="getLocation()">Your location</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+</div>
+
+
+<footer>
+<b><p id="teksti" style="margin-top:10px;margin-left:10px;padding-top:35px;"></p></b>
+<script>
+var skema= {
+			teDrejtat:"Copyright ©",
+			viti:"2019",
+			teksti:"Universal College of Engineering. All rights reserved."	
+};
+	document.getElementById("teksti").innerHTML = skema.teDrejtat+ " " + skema.viti + " " + skema.teksti;
+</script>
+
+
+</footer>
+
+</div>
+
+</body>
+</html>
