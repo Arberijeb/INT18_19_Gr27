@@ -1,52 +1,305 @@
 <!DOCTYPE html>
-<html>
-<head><title>UNIVERSAL COLLEGE OF ENGINEERING</title>
+<html manifest="cache.appcache">
+<head><title>Universal College of Engineering</title>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="styles.css" type="text/css">
+<script src="jquery-1.11.2.min.js" ></script>
+
+<script>
+$(document).ready(function(){
+	var d = new Date();
+	var n = d.getHours();
+	if (n > 21|| n <6)
+	  document.body.className = "night";
+	else
+ 		document.body.className = "day";
+
+	 
+	 
+});
+
+
+</script>
+<script>
+		$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();  /*i fsheh te gjitha fotot perpos fotos se pare */
+	
+			setInterval(function() {    /* eshte nevojitur nje setInterval me ane te se cilit duhet te nderrohen fotot */
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)           /* fade out per te shuar foton e tanishme */
+			    .next()
+			    .fadeIn(1000)            /*  fade in per te shfaqur foton tjeter */
+			    .end()
+			    .appendTo('#slideshow');    /* e tera kjo procedure te perfundoj per kaq miliseknda */
+			},  3000);
+			
+		});
+	</script>
+    <script>
+  $(document).ready(function(){
+    $('.img-zoom').hover(function() {
+        $(this).addClass('transition');
+ 
+    }, function() {
+        $(this).removeClass('transition');
+    });
+  });
+</script>
+
 </head>
+
 <body>
+<SCRIPT LANGUAGE="JavaScript"><!--Ketu kam perdorur nje javascript i cili ndalon qasjen me tastin e djathte nga perdoruesi -->
+var message="Acess denied!!!";
+
+function clickIE() {if (document.all) {alert(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {alert(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+ 
+</script>
+
 <div id="container">
-<table width="932" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-      <td>
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-     <td>
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-     </td>
-     <td><img src="pr.png"  align="left"/>
-     <td align="top">
-         
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-     <td class="tel">TEL:381(0)38 694 254</td>
-  </tr>
-  <tr>
-     <td class="tel">MAIL:info@universalcollege</td>
-  </tr>
-  </table>
-     </td>
-  </tr>
-  </table></td>
-  </tr>
-  <tr>
-    <td style="z-index:1;"> 
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+												<td><h1>Universal College Of Engineering</h1></td>
+                                                    <td align="right">
+                                                        <div class="uni">
+                                                            Prishtina | Kosovo</div>
+                                                    </td>
+                                                </tr>
+												<tr>
+												<td>Affiliated to University of Prishtina</td>
+												<td align="right">
+												<div class="uni">Tel: 381(0)38 694 254 | MAIL: info@universalcollege</div>
+												</td>
+												</tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+ </table>
 <header>
 <div class="menu">
-    <nav>
-	<a href="index.html">Home</a>
-        <a href="about.html">About</a>
-	<a href="departments.html">Departments</a>
+	<nav>
+		<a href="index.html">Home</a>
+	    <a href="about.html">About us</a>
+	    <a href="departments.html">Departments</a>
         <a href="news.html">News & Events</a>
         <a href="contact.html">Contact</a>
         <a href="apply.html">Apply</a>
+		<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search this website.." name="search">
+      <button type="submit"><i class="fa fa-search"></i>SEARCH</button>
+    </form>
+  </div>
     </nav>
 </div> 
-	
 </header>
+	
+<div id="slideshow">
+   
+   <div>
+   <img src="Home/college.jpg"  width="960" height="270"/>
+   <div class="bottomleft">Welcome to Universal College of Engineering</div>
+   </div>
+   <div>
+     <img  src="Home/uce.jpg" width="960" height="270">
+	 <div class="bottomleft">Welcome to Universal College of Engineering</div>
+   </div>
+   
+   <div>
+     <img  src="Home/fff.jpg" width="960" height="270">
+	 <div class="bottomleft">Welcome to Universal College of Engineering</div>
+   </div>
+   <div>
+     <img src="Home/unii.jpg"  width="960" height="270">
+	 <div class="bottomleft">Welcome to Universal College of Engineering</div>
+   </div>
+   
+ </div>
 
-<div id="img"><img src="uce.jpg" width="960" height="270" align="center"/>
+            
+<div class="clearfix" style="width:960px;margin:0 20px;">
+  <div class="img-container">
+  <img src="Home/studd.jpg" alt="Students" style="width:225px;height:80px;"><div class="container">
+  <div class="left">
+  <a href="depart1.html" style="text-decoration:none;font-size:12px;">» Department of Computerized Automation..</a></div>
+  </div>
+  </div>
+  <div class="img-container">
+  <img src="Home/student.png" alt="Programming" style="width:225px;height:80px;"><div class="container">
+  <div class="left">
+  <a href="depart2.html" style="text-decoration:none;font-size:13px;">» Department of Power Engineering »</a></div>
+  </div>
+  </div>
+  <div class="img-container">
+  <img src="Home/stud.jpg" alt="working" style="width:225px;height:80px;"><div class="container">
+  <div class="left">
+  <a href="depart3.html" style="text-decoration:none;font-size:13px;">» Department of Electronics</a></div>
+  </div>
+  </div>
+  <div class="img-container">
+  <img src="Home/studen.jpg" alt="Programming" style="width:225px;height:80px;"><div class="container">
+  <div class="left">
+  <a href="depart4.html" style="text-decoration:none;font-size:13px;">» Department Computer Engineering</a></div>
+  </div>
+  </div>
+</div>
+ 
+ <div class="row" style="width:960px;margin:0 20px;">
+  <div class="column">
+    <h2>Our Vision</h2>
+	<img src="Home/students.png" alt="ourvision" style="width:300px;height:150px;">
+    <div style="font-size:14px;"><p>To be an institution of excellence without bias or prejudice of any kind based on caste,
+religion, creed, culture, language and providing equal opportunity for all.</p>
+<p>To help students acquire and develop knowledge, skills, values & leadership qualities relevant 
+to the 21st century and beyond for their personal and professional growth.</p></div>
+<button style="background-color:#f2f2f2;color:#fff;"><a href="about.html" style="text-decoration:none;">Continue Reading »</a></button>
+  </div>
+  
+  <div class="column">
+    <h2>Our Mission</h2>
+	<img src="Home/mission.jpeg" alt="ourmission" style="width:300px;height:150px;">
+<div style="font-size:14px;"><p>Strive towards the excellent creative thinking and acquiring knowledge
+and provide pleasant and helpful features, resources and means needed for engineering education.</p>
+<p>Imparting high quality education in order to mould the leaners into globally 
+competitive technocrats, who are profesionally deft.</p></div>
+<button style="background-color:#f2f2f2;color:#fff;"><a href="about.html" style="text-decoration:none;">Continue Reading »</a></button>
+
+</div>
+   
+  <div class="column">
+    <h2>News & Events</h2>
+	<img src="Home/en.png" alt="Exams" style="width:80px;height:80px;float:left;border:3px solid #eee;">
+    <p style="font-size:13px;"><strong>Notification</strong> for organizing the regular exam deadline January / February 2019
+Bachelor and Master.</p>
+<button style="background-color:#f2f2f2;color:#fff;margin-left:12px;margin-bottom:5px;"><a href="news.html" style="text-decoration:none;">
+Continue Reading »</a></button>
 </div>
 
+<hr>
+<div class="column">
+<img src="Home/eras.jpg" alt="Erasmus" style="width:80px;height:80px;float:left;border:3px solid #eee;">
+<p style="font-size:13px;"><strong>Notification</strong> for Application for the Erasmus+ program for 2019.</p>
+<button style="background-color:#f2f2f2;color:#fff;margin-left:12px;margin-bottom:5px;"><a href="news.html" style="text-decoration:none;">
+Continue Reading »</a></button>
+
+</div> 
+<hr>
+<div class="column">
+<img src="Home/rek.jpg" alt="rector" style="width:80px;height:80px;float:left;border:3px solid #eee;">
+<p style="font-size:13px;"><strong>Invitation</strong>-The Rector invites you to drink coffee together.</p>
+<button style="background-color:#f2f2f2;color:#fff;margin-left:12px;margin-bottom:5px;"><a href="news.html" style="text-decoration:none;">
+Continue Reading »</a></button>
+
+</div>
+<hr>
+<div class="column">
+<img src="Home/story.png" alt="Erasmus" style="width:80px;height:80px;float:left;border:3px solid #eee;">
+<p style="font-size:13px;"><strong>Invitation</strong>-Support Kosova’s Next Success Story.</p>
+<button style="background-color:#f2f2f2;color:#fff;margin-left:12px;margin-bottom:5px;"><a href="news.html" style="text-decoration:none;">
+Continue Reading »</a></button>
+</div>
+
+</div>
+
+<div class="row" style="width:960px;margin:0 20px;">
+<div class="column">
+<h2>Objectives</h2>
+<img src="Home/eng.jpg" alt="objectives" style="width:300px;height:150px;">
+<div style="font-size:14px;"><p>The main objective is to expand student’s intellectual and spiritual horizons, 
+underscore the nobility of humanity’s 
+never-ending search for truth, beauty and compassion.</p></div>
+<button style="background-color:#f2f2f2;color:#fff;"><a href="about.html" style="text-decoration:none;">Continue Reading »</a></button>
+</div>
+
+<div class="column">
+<h2>Core Values</h2>
+<img src="Home/wires.jpg" alt="corevalues" style="width:300px;height:150px;">
+<div style="font-size:14px;"><p>We have articulated six core values that guide our operational ethos and commitment to deliver unparalled 
+support for our students.</p></div><br>
+<button style="background-color:#f2f2f2;color:#fff;"><a href="about.html" style="text-decoration:none;">Continue Reading »</a></button>
+</div>
+<hr>
+<div class="column">
+<br><br>
+
+<h2>Distance learning programs</h2>
+<hr>
+<br>
+<img src="Home/logo1.png" alt="logo1" style="width:80px;height:80px;border:3px solid #eee;margin-right:35px;">
+<img src="Home/logo2.jpg" alt="logo2" style="width:80px;height:80px;border:3px solid #eee;margin-right:35px;">
+<img src="Home/logo3.jpg" alt="logo3" style="width:80px;height:80px;border:3px solid #eee;">
+<img src="Home/logo4.bmp" alt="logo4" style="width:80px;height:80px;border:3px solid #eee;margin-top:27px;margin-right:35px;">
+<img src="Home/logo5.jpg" alt="logo5" style="width:80px;height:80px;border:3px solid #eee;margin-top:27px;margin-right:35px;">
+<img src="Home/logo6.jpg" alt="logo6" style="width:80px;height:80px;border:3px solid #eee;margin-top:27px;">
+
+</div>
+</div>
+
+<div style="width:960px;height:170px;background-color:#ccc;margin:0px 20px;">
+<div class="row">
+<div class="column">
+<h3 style="text-transform:capitalize;margin-top:20px;margin-left:20px;">Stay in the know<hr></h3>
+<form action="MAILTO:arberie_b@hotmail.com" autocomplete="on" method="get"><div style="font-size:15px;margin:0 20px;">
+Please enter your email to join our mailing list
+<input type="email" name="email">
+<button style="border: 1px solid #eee;">GO</button>
+<br><br>
+<a href="" style="text-decoration:none;">To unsubscribe please click here »</a>
+</form>
+</div> <!-- inside style div -->
+</div> <!-- column div -->
+
+<h3 style="margin-top:20px;margin-left:5px;padding-top:20px;">Study at UCOE</h3>
+<p style="font-size:15px;padding-top:12px;">Undergraduate<br>
+Graduate<br>
+International students<br>
+Continuing education<br>
+Course in education
+</p>
+
+<!--<h3>About the College</h3>
+<p>Giving to College<br>
+How the College work<br>
+Jobs<br>
+Maps<br>
+News & Events<br>
+Visiting the College</p>
+-->
+
+</div>
+</div>  <!-- row div -->
+<footer>
+<b><p id="teksti" style="margin-top:10px;margin-left:10px;padding-top:10px;"></p></b>
+<script>
+var skema= {
+			teDrejtat:"Copyright ©",
+			viti:"2019",
+			teksti:"Universal College of Engineering. All rights reserved."	
+};
+	document.getElementById("teksti").innerHTML = skema.teDrejtat+ " " + skema.viti + " " + skema.teksti;
+</script>
+
+
+</footer><!--Ketu perfundon footeri-->
+
+</div>
 </body>
 </html>
