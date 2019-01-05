@@ -1,0 +1,326 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+#container 
+{
+   width:1000px;
+   height:1200px;
+   background-color:white;
+   margin: 0 160px 0;
+}
+.menu {
+               
+	width:960px;
+	height:30px;
+	background-color:#f2f2f2;
+	box-shadow: -1px 0px 9px 0px rgba(0,0,0,075);
+	z-index:9999;
+	text-align:center;
+               font-size:15px;
+               position:relative;
+               margin: 20px 20px 20px;
+}
+.menu a {
+               float:left;
+	text-decoration: none;
+               margin: 5px 0;
+	padding: 2px 25px; 
+	color: #4d5255;
+	position: relative;
+	display: inline;
+	text-align:center;
+               
+}
+.menu :hover{
+     color: #009ddb;
+}
+.menu a.active {
+background-color:#f3f3f3;
+color:white;
+}
+
+
+.menu .search-container {
+  float: right;
+  margin-right:20px;
+
+}
+
+.menu input[type=text] {
+  padding: 4px;
+  margin-top:3px;
+  font-size: 13px;
+  border: none;
+}
+
+.menu .search-container button {
+  float: right;
+  padding: 4px;
+  margin-top:3px;
+  margin-left:8px;
+  margin-bottom:3px;
+  width:61px;
+  height:23px;
+  color:black;
+  background: #fff;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 960px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .menu a, .menu input[type=text], .menu .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 0;
+    
+  }
+  .menu input[type=text] {
+   border: 1px solid #ccc;
+  }
+}
+.uni {
+	font-size: 14px;
+	color: #262626;	
+}
+.main {
+	width:960px;
+              background-color:#F7F7F7;
+             margin: 0 20px;
+
+}
+
+/* Forma per regjistrim*/
+
+	form.register{
+    width:920px;
+    height:930px;	
+    padding-left:30px;
+}
+form p{
+    font-size: 12pt;
+    clear:both;
+    margin: 0;
+    color:gray;
+    padding:4px;
+}
+form.register fieldset.row1
+{
+    width:900px;
+    padding:5px;
+    float:center;
+    border:1px solid #8B8B8B;
+    margin-bottom:15px;
+}
+form.register fieldset.row1 label{
+    width:140px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+}
+form.register fieldset.row2
+{
+    border:1px solid #8B8B8B;
+    
+    height:220px;
+    padding:5px;
+    float:left;
+}
+form.register fieldset.row3
+{
+    border:1px solid #8B8B8B;
+    padding:5px;
+    float:left;
+    margin-bottom:15px;
+    width:400px;
+}
+form.register fieldset.row4
+{
+    border:1px solid #8B8B8B;
+    
+    padding:5px;
+    float:left;
+    clear:both;
+    width:500px;
+}
+form.register .infobox{
+    float:right;
+    margin-top:20px;
+    border: 1px solid #F1F1F1;
+    padding:5px;
+    width:380px;
+    height:98px;
+    font-size:9px;
+    background: #FDFEFA url(../img/bg_infobox.gif) repeat-x top left;
+}
+form.register legend
+{
+    color: #39F;
+    padding:2px;
+    margin-left: 14px;
+    font-weight:bold;
+    font-size: 16px;
+    font-weight:100;
+}
+form.register label{
+    color:#444;
+    width:98px;
+    float: left;
+    text-align: right; /*orientimi i tekstit*/
+    margin-right: 6px;
+    margin-top:2px;
+}
+form.register label.optional{
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+    color: #666;
+}
+form.register label.obinfo{
+    float:right;
+    padding:3px;
+    font-style:italic;
+}
+form.register input{
+    width: 140px;
+    color: #505050;
+    float: left;
+    margin-right: 5px;
+	font-family:fonti2;
+}
+form.register input.long{
+    width: 247px;
+    color: #505050;
+}
+form.register input.short{
+    width: 40px;
+    color: #505050;
+}
+form.register input[type=radio]
+{
+    float:left;
+    width:15px;
+}
+form.register label.gender{
+    margin-top:-1px;
+    margin-bottom:2px;
+    width:34px;
+    float:left;
+    text-align:left;
+    line-height:19px;
+}
+form.register input[type=text]
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+}
+form.register input[type=password]
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+}
+.button
+{
+    background:#069;
+    padding: 8px 10px 8px;
+    color: #fff;
+    text-decoration: none; /*nuk ka afare dekorime*/
+   
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	-ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Safari */
+	transform:scale(1.1,1.1);
+
+    cursor: pointer;
+    float:left;
+    font-size:18px;
+    margin:10px;
+}
+form.register input[type=text].year
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+    width:30px;
+}
+form.register input[type=checkbox] {
+    width:14px;
+    margin-top:4px;
+}
+form.register select
+{
+    border: 1px solid #E1E1E1;
+    width: 130px;
+    float:left;
+    margin-bottom:3px;
+    color: #505050;
+    margin-right:5px;
+}
+form.register select.date
+{
+    width: 40px;
+}
+input:focus, select:focus{
+    background-color: #efffe0;
+}
+p.info{
+    font-size:7pt;
+    color: gray;
+	text-shadow: 5px 5px 5px #333;
+}
+p.agreement{
+    margin-left:15px;
+}
+p.agreement label{
+    width:390px;
+    text-align:left;
+    margin-top:3px;
+}
+
+.fSocial {
+		float:right;
+		margin-top:-5px;
+		text-align:right;
+		margin-right:40px;
+		border:1px solid black;
+		outline:1px solid Black;
+		outline-offset:10px;
+		
+		
+	}
+	.fSocial li {
+		display:inline;
+		padding:10px;
+	}
+	.fSocial span {
+		margin-top:-20px;
+	}
+
+
+footer {
+              width:960px;
+	padding-top:25px;
+	height:150px;
+	font-size:17px;
+	position:relative;
+  background-color:#F5F5F5;
+  margin:0 20px;
+   bottom:0;
+   text-align:center;
+   
+}
