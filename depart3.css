@@ -1,0 +1,114 @@
+
+body {
+
+  margin: 0;
+  padding: 0;
+  background-color:#fff;
+ 
+}
+#container {
+   width:1000px;
+   height:1000px;
+   background-color:white;
+   margin: 0 160px 0;
+   
+  
+}
+.menu {
+               
+	width:960px;
+	height:30px;
+	background-color:#f2f2f2;
+	box-shadow: -1px 0px 9px 0px rgba(0,0,0,075);
+	z-index:9999;
+	text-align:center;
+               font-size:15px;
+               position:relative;
+               margin: 20px 20px 20px;
+}
+.menu a {
+               float:left;
+	text-decoration: none;
+               margin: 5px 0;
+	padding: 2px 25px; 
+	color: #4d5255;
+	position: relative;
+	display: inline;
+	text-align:center;
+               
+}
+.menu :hover{
+     color: #009ddb;
+}
+.menu a.active {
+background-color:#f3f3f3;
+color:white;
+}
+
+
+.menu .search-container {
+  float: right;
+  margin-right:20px;
+
+}
+
+.menu input[type=text] {
+  padding: 4px;
+  margin-top:3px;
+  font-size: 13px;
+  border: none;
+}
+
+.menu .search-container button {
+  float: right;
+  padding: 4px;
+  margin-top:3px;
+  margin-right:0px;
+  margin-left:8px;
+  
+  background: #fff;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 960px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .menu a, .menu input[type=text], .menu .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 0;
+    
+  }
+  .menu input[type=text] {
+   border: 1px solid #ccc;
+  }
+}
+.uni {
+	font-size: 14px;
+	color: #262626;	
+}
+
+.img {
+float:left;
+border-style: ridge;
+border-radius:5px;
+}
+footer { 
+              
+               margin-left:20px;
+               width:960px;
+	height:100px;
+	font-size:17px;
+	position:relative;
+               bottom:10px;
+               text-align:center;
+   
+}
